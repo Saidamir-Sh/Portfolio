@@ -1,0 +1,146 @@
+.contact {
+        width: 96%;
+        height: 100vh;
+        background-color: #1d1d1d;
+        float: right;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+}
+.contact__map {
+    width: 50%;
+    height: 100vh;
+    border: none;
+}
+.contact__map iframe {
+    height: 100%;
+    width: 100%;
+}
+.contact__form {
+    margin-left: 4em;
+    width: 40%;
+}
+.contact__inputs {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+.inputs {
+    display: flex;
+    justify-content: space-between;
+}
+.inputs input {
+    width: 46%;
+    height: 45px;
+    background-color: #2e2c2c;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+.input__textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1.5em;
+}
+.input__textarea input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    height: 45px;
+    background-color: #2e2c2c;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+.input__textarea textarea {
+    margin-top: 1.5em;
+    border: none;
+    font-size: 16px;
+    height: 150px;
+    font-size: 19px;
+    padding-top: 1em;
+}
+.input__button {
+    position: relative;
+}
+.input__button input {
+    position: absolute;
+    right: 0;
+    top: 2em;
+    width: 65px;
+    height: 35px;
+    background-color: transparent;
+    color:  #3493c7;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border: 1px solid #3493c7;
+    border-radius: 5px;
+}
+.inputs input:focus,
+.input__textarea input:focus, textarea:focus {
+    border-bottom: 2px solid #3493c7;
+}
+.input__button input:hover {
+    letter-spacing: 4px;
+    transition: .1s ease-in-out;
+    background-color: #3493c7;
+    color: #fff;
+}
+
+/*==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA QUERIES =-=-=-=-=-=-==-==-=-=-=-==-=-*/
+
+/* MOBILE DEVICES*/
+@media (min-width: 320px) and (max-width: 480px)  {
+   .contact {
+       width: 100%;
+   }
+   .contact__map {
+       display: none;
+   }
+   .contact__form {
+       width: 90%;
+       margin: 0 auto;
+   }
+   .contact__form h1 {
+       font-size: 30px;
+   }
+   .input__button input {
+       top: 1em;
+   }
+ }
+ /* TABLET, iPAD, DEVICES*/
+ @media (min-width: 481px) and (max-width: 768px) {
+    .contact {
+        width: 100%;
+    }
+    .contact__map {
+        display: none;
+    }
+    .contact__form {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .contact__form h1 {
+        font-size: 45px;
+    }
+    .input__button input {
+        top: 1em;
+    }
+ }
+ /*SMALL SCREENS LAPTOPS*/
+ @media (min-width: 769px) and (max-width: 1024px) {
+     
+    .contact__form h1 {
+        font-size: 30px;
+    }
+    
+ }
+ /*1025px — 1200px: Desktops, large screens.*/
+ @media (min-width: 1025px) and (max-width: 1200px) {
+     
+ }

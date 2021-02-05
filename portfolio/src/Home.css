@@ -1,0 +1,159 @@
+.home {
+    width: 96%;
+    height: 100vh;
+    background-color: #1d1d1d;
+    position: absolute;
+    right:0;
+    display: flex;
+    justify-content: space-between;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+h1 {
+    color: #fff;
+    line-height: 5px;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+small {
+    color: rgba(255, 255, 255, 0.425);
+    font-style: italic;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.content__h1 {
+    display: flex;
+    flex-direction: column;
+}
+.content__p {
+    color: #3493c7;
+    letter-spacing: 4px;
+}
+.letter {
+    transition: .2s;
+    animation-duration: .2s;
+}
+.letter:hover  {
+    color: #ba311f;
+    font-size: 80px;
+    text-orientation: upright;
+    text-shadow: 6px 13px 2px #070707;
+}
+.home__img {
+    position: relative;
+}
+.img__body {
+    background: url('../src/img/robot/robot.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 520px;
+    height: 520px;
+    position: absolute;
+    right: 5em;
+    top: 5em;
+}
+.eyes {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    margin-top: 140px;
+    margin-left: 80px;
+    transform: rotate(-5deg);
+}
+.ball {
+    background: url('../src/img/robot/eye__ball.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/*==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA QUERIES =-=-=-=-=-=-==-==-=-=-=-==-=-*/
+
+/* MOBILE DEVICES*/
+@media (min-width: 320px) and (max-width: 480px)  {
+    .home__img {
+        display: none;
+    }
+    .img__body {
+        background-image: none;
+    }
+    .ball {
+        display: none;
+    }
+    .home {
+        width: 100%;
+    }
+    .content__hi , .content__name, .content__title {
+        font-size: 42px;
+    }
+    .content__p {
+        font-size: 15px;
+    }
+   
+}
+/* TABLET, iPAD, DEVICES*/
+@media (min-width: 481px) and (max-width: 768px) {
+    .home__img {
+        display: none;
+    }
+    .img__body {
+        background-image: none;
+    }
+    .ball {
+        display: none;
+    }
+    .home {
+        width: 93%;
+    }
+    .content__hi , .content__name, .content__title {
+        font-size: 42px;
+    }
+    .content__p {
+        font-size: 15px;
+    }
+}
+/*SMALL SCREENS LAPTOPS*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .home__img {
+        margin-right: 0em;
+    }
+    .img__body {
+        background-image: url('./img/robot/tabletrobot.png');
+        width: 250px;
+        height: 250px;
+        margin-top: 2em;
+    }
+    .ball {
+        display: none;
+    }
+    
+    .content__hi , .content__name, .content__title {
+        font-size: 50px;
+    }
+    .content__p {
+        font-size: 15px;
+    }
+}
+/*1025px — 1200px: Desktops, large screens.*/
+@media (min-width: 1025px) and (max-width: 1200px) {
+    
+    .img__body {
+        background-image: url('./img/robot/tabletrobot.png');
+        width: 350px;
+        height: 350px;
+        margin-top: 2em;
+    }
+    .ball {
+        display: none;
+    }
+    
+}

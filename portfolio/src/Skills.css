@@ -1,0 +1,156 @@
+.skills {
+        width: 96%;
+        height: 100vh;
+        background-color: #1d1d1d;
+        background-attachment: fixed;
+        position: absolute;
+        right: 0;
+        display: flex;
+        justify-content: space-between;  
+}
+.skills__text {
+    width: 45%;
+    margin-left: 4em;
+    overflow: hidden;
+}
+.first__letter {
+    text-shadow: 6px 13px 2px #070707;
+    color: #ba311f;
+    font-size: 80px;
+}
+.text p{
+    color: #fff;
+    text-align: justify;
+}
+.text__card {
+    display: flex;
+    justify-content: space-between;
+}
+.card img {
+    width: 3em;
+}
+.card {
+    width: 35%;
+    padding-top: .4em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 3px #fff;
+    border-radius: 15px;
+    margin: .4em;
+    
+}
+.card:hover {
+    transition: .25s ease;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 6px #fff;
+}
+.card h4 {
+    color: #fff;
+    font-weight: 300;
+}
+.skills__img {
+    /*background-image: url('./img/robot/robotskill.png');*/
+    width: 55%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills__img img {
+    width: 35em;
+}
+.skills__a {
+    text-decoration: none;
+    color: #3493c7;
+}
+
+/*==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA QUERIES =-=-=-=-=-=-==-==-=-=-=-==-=-*/
+
+/* MOBILE DEVICES*/
+@media (min-width: 320px) and (max-width: 480px)  {
+    .skills {
+        width: 100%;
+    }
+    .skills__img {
+        display: none;
+    }
+    .skills__text {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0em;
+        line-height: 18px;
+    }
+    small {
+        margin: .4em;
+    }
+    .text h1 {
+        font-size: 35px;
+    }
+    .text p {
+        font-size: 14px;
+        margin: .5em;
+    }
+    .first__letter {
+        font-size: 50px;
+    }
+    .card {
+        height: 100px;
+    }
+    .card img {
+        width: 45px;
+    }
+    .card h4 {
+        font-size: 16px;
+    }
+ }
+ /* TABLET, iPAD, DEVICES*/
+ @media (min-width: 481px) and (max-width: 768px) {
+    .skills__img {
+        display: none;
+    }
+    .skills__text {
+        width: 85%;
+        margin: 0 auto;
+        line-height: 20px;
+    }
+    small {
+        margin: .4em;
+    }
+    .text h1 {
+        font-size: 35px;
+    }
+    .text p {
+        font-size: 16px;
+        margin: .8em;
+    }
+    .first__letter {
+        font-size: 50px;
+    }
+ }
+ /*SMALL SCREENS LAPTOPS*/
+ @media (min-width: 769px) and (max-width: 1024px) {
+    .skills__img {
+        display: none;
+    }
+    .skills__text {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .card {
+        padding: 0;
+        width: 150px;
+        height: 150px;
+    }
+ }
+
+ /*1025px — 1200px: Desktops, large screens.*/
+ @media (min-width: 1025px) and (max-width: 1200px) {
+     .skills__img {
+        background-image: none;
+     }
+     .skills__img img {
+         width: 30em;
+     }
+ }

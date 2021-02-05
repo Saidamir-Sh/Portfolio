@@ -1,0 +1,114 @@
+.navbar {
+    width: 4%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #181818;
+}
+.navbar__logo {
+    height: 90px;
+    background-color: #070707;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.navbar__logo h1 {
+    color: #ba311f;
+    font-size: 3rem;
+    text-align: center;
+}
+.navbar__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
+}
+.buttons {
+    color: rgba(255, 255, 255, 0.507);
+    margin-top: .4em;
+}
+.active {
+    color: #3493c7;
+    
+}
+.navbar__media {
+    height: 26vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    
+}
+.navbar__media a {
+    font-size: 1px;
+}
+.media {
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.267);
+}
+/*==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA QUERIES =-=-=-=-=-=-==-==-=-=-=-==-=-*/
+
+/* MOBILE DEVICES*/
+@media (min-width: 320px) and (max-width: 480px)  {
+    .navbar {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 9vh;
+        flex-direction: row;
+    }
+    .navbar__buttons{
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        margin: 0 auto;
+    }
+    .buttons {
+        margin: 8px;
+    }
+    .navbar__logo, .navbar__media {
+        display: none;
+    }
+}
+/* TABLET, iPAD, DEVICES*/
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        width: 7%;
+    }
+}
+/*SMALL SCREENS LAPTOPS*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        width: 7%;
+        position: absolute;
+    }
+    .navbar__buttons {
+        margin: 0em;
+        font-size: small;
+    }
+    .navbar__media {
+        margin-top: 0em;
+    }
+    .buttons {
+        margin: 0px;
+    }
+}
+/*1025px — 1200px: Desktops, large screens.*/
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .navbar {
+        position: absolute;
+        width: 7%;
+    }
+    .navbar__buttons {
+        margin-top: 4em;
+    }
+    .navbar__media {
+        margin-top: 4em;
+    }
+    .buttons {
+        margin: 15px;
+    }
+}

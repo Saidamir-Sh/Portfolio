@@ -1,0 +1,88 @@
+.about {
+    width: 96%;
+    height: 100vh;
+    background-color: #1d1d1d;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about__text {
+    width: 40%;
+    margin-left: 4em;
+    text-align: justify;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.text,
+.text__paragraph {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+small {
+    margin: .5em;
+}
+.about__img {
+    /*background: url('./img/robot/aboutrobot.png');*/
+    overflow: hidden;
+}
+.about__img img {
+    width: 37em;
+}
+
+/*==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- MEDIA QUERIES =-=-=-=-=-=-==-==-=-=-=-==-=-*/
+
+/* MOBILE DEVICES*/
+@media (min-width: 320px) and (max-width: 480px)  {
+   .about {
+       width: 100%;
+       flex-direction: column;
+   }
+   .about__text {
+       width: 90%;
+       margin: 0 auto;
+   }
+   .text__header {
+       font-size: 35px;
+   }
+   .text__paragraph p {
+       font-size: 14px;
+   }
+   .about__img img {
+        display: none;
+}
+}
+/* TABLET, iPAD, DEVICES*/
+@media (min-width: 481px) and (max-width: 768px) {
+   .about__img {
+       display: none;
+   }
+   
+   .about__text {
+    width: 90%;
+    margin: 0 auto;
+}
+
+}
+/*SMALL SCREENS LAPTOPS*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about__text {
+        width: 65%;
+    }
+   .text__header {
+    font-size: 45px;
+}
+.text__paragraph p {
+    font-size: 18px;
+}
+.about__img {
+    display: none;
+}
+}
+/*1025px — 1200px: Desktops, large screens.*/
+@media (min-width: 1025px) and (max-width: 1200px) {
+    
+}
