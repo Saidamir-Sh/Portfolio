@@ -37,9 +37,7 @@ function Home() {
         exit={{transitionDelay: '0.55s', opacity: 0,  transform: "scale(1.2)" , transition: "1s"}}> 
             <div className='home__content'>
                 <div className='content'>
-                    <small className='content_bodyStart'> &#8826;body&#8827;</small>
                     <div className='content__h1'>
-                        <small className='h1Start'>&#8826;h1&#8827;</small>
                         <h1 className='content__hi'>
                             <span className='letter'>H</span><span className='letter'>i,</span>
                         </h1>
@@ -71,10 +69,8 @@ function Home() {
                             <span className='letter'>e</span>
                             <span className='letter'>r</span>
                         </h1>
-                        <p className='content__p'>MERN Stack Developer || Front end Developer</p>
-                        <small className='h1Start'>&#8826;&#8725;h1&#8827;</small>
+                        <p className='content__p'>Web Developer || Front end Developer</p>
                     </div>
-                    <small className='content_bodyEnd'> &#8826;&#8725;body&#8827;</small>
                 </div>
             </div>
             <div className='home__img'>

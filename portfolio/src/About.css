@@ -15,6 +15,11 @@
     color: #fff;
     display: flex;
     flex-direction: column;
+    padding: 5em;
+    border-radius: 17px;
+    background: #1d1d1d;
+    box-shadow:  -9px 9px 18px #171717,
+                          9px -9px 18px #232323;
 }
 .text,
 .text__paragraph {

@@ -7,6 +7,10 @@
     justify-content: space-between;
 }
 .projects__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-left: 2em;
 }
 .projects__img img {

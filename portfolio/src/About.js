@@ -10,8 +10,6 @@ function About() {
                     exit={{transitionDelay: '0.55s', opacity: 0,  transform: "scale(1.2)" , transition: "1s"}}>
             <div className='about__text'>
                 <div className='text'>
-                <small className='content_bodyStart'> &#8826;body&#8827;</small>
-                <small className='h1Start'>&#8826;h1&#8827;</small>
                 <h1 className='text__header'>
                 <span className='letter first__letter'>A</span>
                 <span className='letter'>b</span>
@@ -22,15 +20,11 @@ function About() {
                 <span className='letter'>m</span>
                 <span className='letter'>e</span>
                 </h1>
-                <small className='h1Start'>&#8826;&#8725;h1&#8827;</small>  
                 </div>
                 <div className='text__paragraph'>
-                <small className='content_bodyEnd'> &#8826;p&#8827;</small>
                     <p>I am involved in programming and professionaly connected with web development.</p>
                     <p>Problem solver, innovative, deep learner person. Always strive for better work and learning new things. Learner of SMM, interested in marketing, bussines and social media growing. A pet lover, likes outdoor activities and positive person.</p>
-                    <p>Currently Junior Front end Developer and working on entire MERN stack projects.</p>
-                    <small className='content_bodyEnd'> &#8826;&#8725;p&#8827;</small>
-                    <small className='content_bodyEnd'> &#8826;&#8725;body&#8827;</small>
+                    <p>Currently Web Developer and working on entire projects.</p>
                 </div>
             </div>
             <div className='about__img'>

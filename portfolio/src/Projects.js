@@ -13,8 +13,6 @@ function Projects() {
         animate={{ transitionDelay: '0.55s', opacity: 1,  transform: "scale(1)" ,transition: "1s"}}
         exit={{transitionDelay: '0.55s', opacity: 0,  transform: "scale(1.2)" , transition: "1s"}}>
               <div className='projects__img'>
-              <small className='content_bodyStart'> &#8826;body&#8827;</small><br></br>
-                <small className='h1Start'>&#8826;h1&#8827;</small>
               <h1>
                 <span className='letter first__letter'>M</span>
                 <span className='letter'>y</span>
@@ -25,9 +23,7 @@ function Projects() {
                 <span className='letter'>k</span>
                 <span className='letter'>s</span>  
             </h1>
-            <small className='h1Start'>&#8826;&#8725;h1&#8827;</small><br></br> 
                 <img  src={worksrobot}/>
-                <small className='content_bodyEnd'> &#8826;&#8725;body&#8827;</small> 
               </div>
             <div className='projects__container'>
                 <div className='container'>
